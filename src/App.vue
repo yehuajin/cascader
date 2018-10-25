@@ -2,7 +2,7 @@
   <div class="rx-page">
     <h3>
       <i class="el-icon-star-on"></i><i class="el-icon-star-on"></i>
-      RxCascader功能演示(事件的打印结果请打开控制台查看)
+      级联选择控件
     </h3>
     <h3>
       <i class="el-icon-star-on"></i>
@@ -17,7 +17,7 @@
       props: { type: Object, default () { return { label: 'label',value: 'value', children: 'children' } } }
       label:显示字段名，value:绑定值字段，children:子级数组字段
     </h4>
-    <h4> onlyLastNodeCheck: Boolean 是否只能选择最后一个节点（，当多选的时候只能选择最后一个节点。。。。。）</h4>
+    <h4> onlyLastNodeCheck: Boolean 是否只能选择最后一个节点，当多选的时候只能选择最后一个节点</h4>
     <h4>showAllLevels: { type: Boolean, default: true } 是否显示全路径，false时只显示最后一级的label值</h4>
     <h4>multiple: Boolean 是否多选</h4>
     <h3>
