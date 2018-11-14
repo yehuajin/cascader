@@ -60,10 +60,12 @@
 </template>
 
 <script>
+  import RxComponentMixin from '@/mixins/rx-component-mixin'
   import _ from 'lodash'
   const escapeRegexpString = (value = '') => String(value).replace(/[|\\{}()[\]^$+*?.]/g, '\\$&')
   export default {
-    name: 'cascader',
+    name: 'Cascader',
+    mixins: [RxComponentMixin],
     props: {
       options: Array,
       placeholder: String,
